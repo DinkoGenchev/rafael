@@ -1,0 +1,670 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+/*~~~~~~~~~~ GLOBAL ~~~~~~~~~*/
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.container{
+    width: 96%;
+    max-width: 1600px;
+    margin:0 auto;
+    padding:0 2%;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 60px; 
+    margin-top: 5px;
+    color:#fff;
+}
+p {
+    color:#85848a;
+}
+
+
+
+
+/* ~~~~~~~ HEADER ~~~~~~~~*/
+
+
+.logo {
+    float: left;
+}
+.logo h4 {
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 10px;
+    color: #fff;
+}
+.navigation {
+    float:right;
+}
+.nav {
+    list-style-type: none;
+}
+.container:after {
+    display:block;
+    clear: both;
+    content: ""; 
+}
+.nav a {
+    color:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+}
+.nav li {
+    float:left;
+    margin-top: 10px;
+    margin-left: 35px;
+    position: relative;
+}
+
+.hero-btn {
+    display: inline-block;
+    font-weight: 600;
+    margin: 50px 80px;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 20px 60px;
+    border-radius: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #32be60;
+}
+
+.hero-img {
+    background:url("charity-home_01.jpg");
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position:center center;
+    background-repeat: no-repeat;
+    min-height: 760px;
+}
+.nav li a:hover {
+    padding-top: 10px;
+    border-top: 3px solid #fff;
+}
+
+.hero-content {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    min-height: 600px;
+}
+
+.hero-content p{
+    font-size: 18px;
+    font-weight:300;
+    color:#878180;
+    margin:30px auto;
+    width: 70%;
+}
+
+.hero-boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 30%;
+    margin:20px auto 30px;
+}
+.box h4 {
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.box p{
+    font-size: 18px;
+    font-weight:300;
+    color:#878180;
+    margin:30px 0;
+}
+
+
+/* FIRST SECTION   LIVE CAMPAIGNS */
+
+
+.heading-text h2{
+    font-weight: 400;
+    font-size: 28px;
+    text-align: center;
+    margin:50px auto 30px;
+}
+.heading-text p {
+    font-weight: 300;
+    text-align: center;
+}
+
+
+/* JS dots */
+.dots {
+    background:url("dots.png");
+    background-repeat: no-repeat;
+    width: 58px;
+    height: 20px;
+    margin:20px auto 30px;
+}   
+.campaign {
+    display: flex;
+    justify-content:space-between;
+    list-style-type: none;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.campaign-list {
+    width: 23%;
+    margin:auto;
+}
+.campaign-list img {
+    width: 100%;
+}
+.campaign-list h4 {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.campaign-list h6 {
+    font-size: 16px;
+    margin:20px auto;
+    padding-left: 20px;
+    background: url("33622.png")no-repeat left;
+}
+.campaign-list-content{
+    padding: 0 10px;
+}
+.progress-img1 .green-progress {
+    width: 40%;
+    background-color:#32be60;
+    height: 5px;
+}
+.progress-img2 .green-progress {
+    width: 76%;
+    background-color:#32be60;
+    height: 5px;
+}
+.progress-img3 .green-progress {
+    width: 6%;
+    background-color:#32be60;
+    height: 5px;
+}
+.progress-img4 .green-progress {
+    width: 100%;
+    background-color:#32be60;
+    height: 5px;
+}
+.progress-img1, .progress-img2, .progress-img3, .progress-img4 {
+    width: 90%;
+    background-color:#dad8df; 
+}
+.progress ul {
+    list-style-type: none;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.progress ul li {
+    width: 32%;
+    margin: auto;
+}
+.numbers {
+    font-weight: 600;
+    color: #000;
+}
+.btn-all  {
+    display: inline-block;
+    padding: 20px 50px;
+    border:2px solid black;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    text-align: center;
+}
+.gg-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 40px;
+}
+
+
+
+/* ~~~~~~ SECOND SECTION  Story ~~~~~~~~*/
+
+.story {
+    background:url("charity-home_21.jpg");
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position:0 center;
+    background-repeat: no-repeat;
+    min-height: 480px;
+    box-sizing: border-box;
+}
+.story-content h2 {
+    font-weight: 400;
+    margin-bottom: 40px;
+    color:#fff;
+    font-size: 28px;
+}
+.story-content p {
+    font-weight: 300;
+    color:#fff;
+    font-size: 14px;
+}
+.story-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 350px;
+    margin-left: 45%;
+}
+
+
+
+/*~~~~~~~~~~ THIRD SECTION  Help~~~~~~~~~~~~ */
+
+.help ul p {
+    text-align: left;
+}
+.help ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    flex-flow:wrap;
+    align-items: center;
+}
+.help .box {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border:2px solid #f0edf4;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 110px;
+    margin:auto 20px;
+}
+.help-text {
+    width: 70%;
+}
+
+.help ul li {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 40%;
+    padding: 2%;
+}
+.help ul li h5 {
+    margin:0 auto 20px;
+
+}
+
+/* ~~~~~~ SECTION Goods ~~~~~~~~*/
+
+.goods {
+    background:url("img.png");
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position:0 center;
+    background-repeat: no-repeat;
+    min-height: 480px;
+    box-sizing: border-box;
+}
+.goods-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 350px;
+    margin-left: 45%;
+}
+.goods-content p {
+    font-weight: 300;
+    font-size: 14px;
+}
+.goods-content h2 {
+    font-weight: 400;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+.shop {
+    display:inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #150c31;
+    color:#fff;
+    padding: 20px 40px ;
+    border-radius: 50px;
+    font-weight: 400;
+    width:200px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+/* ~~~~~~~LAST SECTION ~~~~~~~~ */
+
+
+.donors {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+.donors li {
+    width: 15%;
+    padding: 2%;
+}
+
+/*~~~~~~ FOOTER ~~~~~~~*/
+footer  {
+    background-color: #202020;
+}
+
+footer .container {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer ul {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+footer p {
+    width: 50%;
+    color:#fff;
+    font-weight: 300;
+    font-size: 12px;
+}
+footer .container ul {
+    list-style-type: none;
+}
+footer li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    padding: 10px;
+}
+footer li {
+  padding-left: 1em; 
+  text-indent: -.7em;
+}
+
+footer li:before {
+  content: " • ";
+  color: #fff;
+}
+footer li:first-child:before {
+    display: none;
+}
+
+/* ~~~~~~~MEDIA ~~~~~~~~*/
+
+@media screen and (max-width: 1150px) {
+.campaign {
+    justify-content: center;  
+}
+.campaign-list {
+    width:48%;
+    padding: 1%;
+ }
+ .cmapaign-list h4 {
+    width: 100%;
+ }
+ .campaign-list-content {
+    width: 75%;
+    margin:0 auto;
+    padding: 0 5px;
+ }
+ .campaign-list-content h4 {
+    text-align: center;
+ }
+ .donors {
+    flex-wrap: wrap;
+ }  
+ .donors li {
+    width: 33%;
+ }
+ footer ul { 
+    width: 60%;
+ }
+}
+
+@media screen and (max-width: 980px){
+    .help ul li {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .intro .top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .logo{
+        margin-bottom: 20px;
+    }
+    .navigation {
+        float: none;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin:auto;
+    }
+    .nav {
+        margin:auto;
+    }
+    .hero-boxes {
+        flex-direction: column;
+    }
+    .hero-boxes .box {
+        width: 80%;
+        margin-top: 0;
+    }
+    .hero-boxes .box p {
+        margin-top:5px;
+    }
+    .campaign-list {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+    .story-content {
+        width: 80%;
+        margin:auto;
+        align-items: center;
+        text-align: center;
+    }
+    .goods-content {
+        width: 80%;
+        margin:auto;
+        align-items: center;
+        text-align: center;
+    }
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+    
+    }
+    footer ul {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 620px ) {
+    .navigation ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+    }
+    .nav li{
+        margin: 0;
+        padding: 10px;
+        border-bottom: 1px solid #fff;
+
+    }
+    footer ul {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer ul li {
+        margin:5px auto;
+        border-bottom: 1px solid #fff;
+    }
+    footer ul li:last-child {
+        border-bottom: none;
+    }
+    footer li:before {
+        display: none;
+
+    }
+}
